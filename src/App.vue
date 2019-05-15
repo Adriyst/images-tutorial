@@ -1,10 +1,17 @@
 <template>
-    <h3>Hei verden</h3>
+    <div>
+        <AppHeader></AppHeader>
+    </div>
 </template>
 
 <script>
+import AppHeader from './components/AppHeader'
+
 export default {
-    name: 'App'
+    name: 'App',
+    components: {
+        AppHeader
+    }
 }
 </script>
 
