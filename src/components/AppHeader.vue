@@ -4,8 +4,8 @@
         
         <div class="right menu">
             <div v-if="isLoggedIn" id="horizontal_buttons">
-                <a href="#" class="ui item">Galleries</a>
-                <a href="#" class="ut item">Upload</a>
+                <router-link to="/" class="ui item">Galleries</router-link>
+                <router-link to="/upload" class="ut item">Upload</router-link>
                 <a href="#" class="ui item" @click="logout">Logout</a>
             </div>
             <a href="#" class="ui item" @click="login" v-else>login</a>
