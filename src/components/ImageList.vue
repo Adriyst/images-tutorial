@@ -1,15 +1,36 @@
 <template>
-    <div>
-        image list
+    <div class="ui huge horizontal divided list">
+        <div class="item">
+            <img 
+            :src="image.link" 
+            v-for="image in allImages"
+            :key="image.id"
+            class="ui image"
+            height="150px"
+            width="150px"
+            >
+        </div>
     </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex';
 export default {
-    name: 'ImageList'
+    name: 'ImageList',
+    methods: {
+        ...mapActions(['fetchImages'])
+    },
+    computed: {
+        ...mapGetters(['allImages'])
+    },
+    created() {
+        this.fetchImages();
+    }
 }
 </script>
 
 <style scoped>
-
+li {
+    list-style: none;
+}
 </style>
