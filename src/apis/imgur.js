@@ -1,6 +1,6 @@
 import qs from 'qs';
 
-const CLIENT_ID = 'e51cd84553c530e'
+const CLIENT_ID = ''
 const ROOT_URL = 'https://api.imgur.com';
 
 export default {
