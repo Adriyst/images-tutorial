@@ -1,6 +1,7 @@
 import qs from 'qs';
+import apiKey from '../secrets/keys'
 
-const CLIENT_ID = '';
+const CLIENT_ID = apiKey.imgur;
 const ROOT_URL = 'https://api.imgur.com';
 
 export default {
