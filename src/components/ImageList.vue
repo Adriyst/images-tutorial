@@ -6,8 +6,8 @@
             v-for="image in allImages"
             :key="image.id"
             class="ui image"
-            height="150px"
-            width="150px"
+            height="250px"
+            width="350px"
             >
         </div>
     </div>
